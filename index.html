@@ -37,10 +37,12 @@
         {
             let getvalue = document.getElementById("table").value;
             let limitvalue = document.getElementById("table2").value;
+            let output = "";
 
             for(let i=1; i<=limitvalue; i++)
         {
-            document.getElementById("tableshow").innerHTML += (getvalue + " x " + i + " = " + (i * getvalue) + "<br>");
+            output += (getvalue + " x " + i + " = " + (i * getvalue) + "<br>");
+            document.getElementById("tableshow").innerHTML = output;
         }
         }
 
